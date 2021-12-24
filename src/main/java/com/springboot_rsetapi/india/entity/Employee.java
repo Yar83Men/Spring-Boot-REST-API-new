@@ -1,6 +1,9 @@
 package com.springboot_rsetapi.india.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "employees_new")
@@ -9,12 +12,18 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @NotNull
+    @Size(min = 2, max = 20, message = "Min 2, max = 20")
     @Column(name = "first_name")
     private String firstname;
 
+    @NotNull
+    @Size(min = 2, max = 20, message = "Min 2, max = 20")
     @Column(name = "last_name")
     private String lastname;
 
+    @NotNull
+    @Email
     @Column(name = "email")
     private String email;
 
