@@ -23,7 +23,7 @@ public class Employee {
     private String lastname;
 
     @NotNull
-    @Email
+    @Email    
     @Column(name = "email")
     private String email;
 

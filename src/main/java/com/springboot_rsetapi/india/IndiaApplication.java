@@ -1,10 +1,10 @@
 package com.springboot_rsetapi.india;
 
-
+/* 
 import com.springboot_rsetapi.india.entity.Employee;
 import com.springboot_rsetapi.india.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.CommandLineRunner; */
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -14,10 +14,11 @@ public class IndiaApplication {
     public static void main(String[] args) {
 
         SpringApplication.run(IndiaApplication.class, args);
+        
     }
 }
-//    @Autowired
-//    private EmployeeRepository employeeRepository;
+    /* @Autowired
+    private EmployeeRepository employeeRepository; */
 
 //    @Override
 //    public void run(String... args) throws Exception {
